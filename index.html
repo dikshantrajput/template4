@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3d6105a86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Headphones</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="back-to-top">
+            <i class="fa fa-angle-up"></i>
+        </div>
+
+        <div class="background-image">
+
+            <header>
+                <div class="logo">
+                </div>
+               
+
+                <nav>
+                    <div class="menubar">
+                        <ul class="list">
+                            <li class="list-items"><a href="#">HOME</a></li>
+                            <li class="list-items"><a href="#">SHOPPING CART</a></li>
+                            <li class="list-items"><a href="#">BRANDS</a></li>
+                            <li class="list-items"><a href="#">CATEGORIES</a></li>
+                            <li class="list-items"><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="burger">
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                    <div class="layer3"></div>
+                </div>
+            </header>
+        </div>
+
+        <div class="heading-banner">
+            <h2>Thinking of byuing<b><q> HEADPHONE</q></b>?</h2>
+            <p>You are at right place</p>
+            <button>BUY NOW</button>
+        </div>
+        
+        <div class="section1">
+                <h2>Hottest headphones of the month</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./images/3.jpg">
+                    <div>
+                        <h2>HEADPHONE</h2>
+                        <p>Experience the exact same elevated experience and also amazing audio UHP has actually been providing to auditorium, workshops and also living rooms for 50 years with HTML Business Templates.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/4.jpg">
+                    <div>
+                        <h2>HEADPHONE</h2>
+                        <p>This is songs without any limitations. Surrender to Business HTML Templates remarkable audio wrapped in ageless design. Let it have fun with your ideas, tinker your heart, or alter your strategies.A must buy for everyone.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/7.jpg">
+                    <div>
+                        <h2>HEADPHONE</h2>
+                        <p>From the storage locker area to the lecture hall, you're constantly on the go with Business HTML Template. Pay attention for approximately 18 hours on a single cost, after that use Deep-Sleep setting to conserve power.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="text">
+                <h3>HURRY UP! THE OFFER IS LIMITED</h3>
+                <h1>Like it? Pre-order and get a discount</h1>
+            </div>
+            <button>Learn More</button>
+        </div>
+
+        <div class="section3">
+            <h1>
+                Why do you have to buy headphones only from us?
+            </h1>
+
+            <div class="sec3-cards">
+                <div class="sec3-card">
+                    <h3>HIGH QUALITY</h3>
+                    <p>This is songs with no restrictions. Surrender to HTML Business Template exceptional sound wrapped in timeless style.</p>
+                </div>
+
+                <div class="sec3-card">
+                    <h3>ORIGINAL DEVICES</h3>
+                    <p>This is songs with no restrictions. Surrender to HTML Business Template exceptional sound wrapped in timeless style.</p>
+                </div>
+
+                <div class="sec3-card">
+                    <h3>YEAR WARRANTY</h3>
+                    <p>This is songs with no restrictions. Surrender to HTML Business Template exceptional sound wrapped in timeless style.</p>
+                </div>
+
+                <div class="sec3-card">
+                    <h3>WEEK TO CHECK</h3>
+                    <p>This is songs with no restrictions. Surrender to HTML Business Template exceptional sound wrapped in timeless style.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+
+
+    <script>
+        const burger=document.querySelector(".burger")
+        const nav=document.querySelector("nav")
+        const header=document.querySelector("header")
+        const wrapper=document.querySelector(".wrapper")
+        const backToTop=document.querySelector(".back-to-top")
+
+        burger.classList.add("none")
+        burger.addEventListener("click",function(){
+            nav.classList.toggle("none")
+            header.classList.toggle("new-header")
+            nav.classList.toggle("new-nav")
+            burger.classList.toggle("cross")
+            header.style.transition="all 1s ease"
+            nav.style.transition="all 1s ease"
+        })
+
+        window.addEventListener("scroll",function(){
+
+
+            if(window.scrollY>0){
+                header.style.backgroundColor="#fac769"
+                header.style.opacity="1"
+            }else{
+                header.style.backgroundColor="white"
+                header.style.opacity="0.9"
+            }
+
+            if(window.scrollY>300){
+                backToTop.style.display="flex"
+
+                backToTop.addEventListener("click",function(){
+                    window.scroll(0,0)
+                })
+            }
+            else{
+                backToTop.style.display="none"
+            }
+    })
+    </script>
+
+</body>
+</html>
